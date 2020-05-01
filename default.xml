@@ -2,6 +2,7 @@
 <manifest>
   <default sync-j="4" revision="zeus"/>
 
+  <remote fetch="https://github.com/liuming50" name="ming"/>
   <remote fetch="https://github.com/damdinsharav" name="btv"/>
   <remote fetch="https://github.com/superna9999" name="meson"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
@@ -14,6 +15,10 @@
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"/>
   <project remote="meson" name="meta-meson" path="sources/meta-meson"/>
   <project remote="bitbake-completion" name="bitbake-bash-completion" path="sources/bitbake-bash-completion" revision="master"/>
+
+  <project remote="ming" name="yocto-docker-builder" path="docker" revision="master">
+    <linkfile dest="setup" src="setup"/>
+  </project>
 
   <project remote="btv" name="meta-btv" path="sources/meta-btv" revision="ming-dev">
     <linkfile dest="poky-init-build-env" src="scripts/poky-init-build-env"/>

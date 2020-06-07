@@ -13,7 +13,7 @@
   <project remote="yocto" name="poky" path="sources/poky"/>
   <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="meson" name="meta-meson" path="sources/meta-meson"/>
+  <project remote="meson" name="meta-meson" path="sources/meta-meson" revision="master"/>
   <project remote="bitbake-completion" name="bitbake-bash-completion" path="sources/bitbake-bash-completion" revision="master"/>
 
   <project remote="ming" name="yocto-docker-builder" path="docker" revision="master">
